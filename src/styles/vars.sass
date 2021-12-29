@@ -1,0 +1,29 @@
+$white: white
+$black: black
+
+$menu-transition: .2s ease-in-out
+$menu-transition-long: .4s ease-in-out
+$border: 1px solid black
+
+
+@function rem($px)
+  @return calc(#{$px} / 16 * 1rem)
+
+@function get-breakpoints($key: "md")
+  @return map-get($container-max-widths, $key)
+
+
+$spacers: ( xxs: rem(24), xs: rem(32), s: rem(48), m: rem(64), l: rem(96), xl: rem(128) )
+
+
+// GRID
+$grid-columns: 12
+
+$grid-breakpoints: ( xs: 0, sm: 576px, md: 768px, lg: 1024px, xl: 1368px )
+
+// $grid-gutter-width: .5rem
+// $grid-gutter-width: 28 24 24 20
+$grid-gutter-width: 24px
+$gutters: ( 0: 0, 1: $grid-gutter-width, 2: $grid-gutter-width * 2, 3: $grid-gutter-width * 3, 4: $grid-gutter-width * 4, 5: $grid-gutter-width * 5 )
+
+$container-max-widths: ( xs: 100vw, sm: 540px + $grid-gutter-width, md: 720px + $grid-gutter-width, lg: 960px + $grid-gutter-width, xl: 1304px + $grid-gutter-width )
