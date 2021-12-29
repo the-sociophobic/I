@@ -12,20 +12,20 @@
 .underline
   width: 100%
   position: relative
-  margin-bottom: rem(16 + 28) !important
+  margin-bottom: 54px !important
   &::after
     content: '' 
     position: absolute
-    bottom: rem(-16)
+    bottom: -16
     left: 0
     width: 100%
-    height: rem(1)
+    height: 1px
     background-color: $black
 
 
 @mixin font-params($font-size, $line-height)
-  font-size: rem($font-size) !important
-  line-height: rem($line-height) !important
+  font-size: $font-size !important
+  line-height: $line-height !important
 
 
 .h1, .h2, .h3
@@ -46,13 +46,13 @@
 
 .h2
   @include font-params(32, 40)
-  margin-bottom: rem(26)
+  margin-bottom: 26px
   @include media-breakpoint-down(md)
     @include font-params(26, 32)
-    margin-bottom: rem(21)
+    margin-bottom: 21px
   @include media-breakpoint-down(xs)
     @include font-params(22, 28)
-    margin-bottom: rem(18)
+    margin-bottom: 18px
 .h3
   @include font-params(20, 28)
   @include media-breakpoint-down(md)
