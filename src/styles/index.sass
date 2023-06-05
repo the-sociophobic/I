@@ -1,3 +1,4 @@
+@import './theme.css'
 @import './vars.sass'
 @import './fonts.sass'
 @import './modificators.sass'
@@ -5,10 +6,13 @@
 @import '~bootstrap/scss/bootstrap.scss'
 
 
+#root
+  background-color: $main-background
+
 *
   font-family: 'Philosopher', sans-serif
   font-display: auto
-  color: $black
+  color: $main-text
   margin: 0
   padding: 0
   box-sizing: border-box
@@ -55,6 +59,22 @@
       height: 40px
 
 .Title
+  width: 100vw
+  height: 100vh
+  .container
+    height: 100%
+  &__h1
+    font-family: 'Druk'
+    font-weight: bold
+    line-height: .9
+    &--horizontal
+      text-align: right
+  &__avatar
+    display: inline-block
+    aspect-ratio: 1 / 1
+    position: relative
+    &__img
+      @extend .abs-cover
 
 .Projects
   .Project
