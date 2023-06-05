@@ -2,6 +2,7 @@
   "name": "I",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Леф.рф/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -23,6 +24,8 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "yarn run build && echo Леф.рф > ./build/CNAME && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
