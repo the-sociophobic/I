@@ -1,7 +1,7 @@
 import React from 'react'
 
+import Routes from './components/Router'
 import Header from './components/Header'
-import Title from './components/Title'
 
 import './styles/index.sass'
 
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       {/* <Header /> */}
-      <Title />
+      <Routes />
     </div>
   )
 }
