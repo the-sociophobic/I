@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d3ccf89.css",
-    "main.js": "/static/js/main.a9584c76.js",
+    "main.css": "/static/css/main.061f13df.css",
+    "main.js": "/static/js/main.779cfebf.js",
     "static/media/Левфиус.png": "/static/media/Левфиус.762c488a0eb3b59aa4de.png",
     "static/media/DrukCyr-HeavyItalic.ttf": "/static/media/DrukCyr-HeavyItalic.2fc6debedf33797f0328.ttf",
     "static/media/DrukCyr-MediumItalic.ttf": "/static/media/DrukCyr-MediumItalic.387b230c8cbfc1e8c3ea.ttf",
@@ -9,11 +9,11 @@
     "static/media/DrukCyr-SuperItalic.ttf": "/static/media/DrukCyr-SuperItalic.a2980613e4cffb6eb844.ttf",
     "static/media/Futura Extra Black Condensed Italic.otf": "/static/media/Futura Extra Black Condensed Italic.4484c5c88307cf1e3d81.otf",
     "index.html": "/index.html",
-    "main.9d3ccf89.css.map": "/static/css/main.9d3ccf89.css.map",
-    "main.a9584c76.js.map": "/static/js/main.a9584c76.js.map"
+    "main.061f13df.css.map": "/static/css/main.061f13df.css.map",
+    "main.779cfebf.js.map": "/static/js/main.779cfebf.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d3ccf89.css",
-    "static/js/main.a9584c76.js"
+    "static/css/main.061f13df.css",
+    "static/js/main.779cfebf.js"
   ]
 }
