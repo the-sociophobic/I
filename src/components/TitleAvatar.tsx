@@ -1,6 +1,6 @@
 import React from 'react'
 
-import avatar from '../styles/img/Левфиус.png'
+import avatar from '../assets/img/Левфиус.png'
 
 
 export type TitleAvatarProps = {

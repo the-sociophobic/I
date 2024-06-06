@@ -7,7 +7,7 @@ interface ObjectType extends Object {
 
 
 const filterKeys = (item: object, model: object) => 
-  _.pickBy(item, (value, key) => Object.keys(model).includes(key))
+  _.pickBy(item, (_value, key) => Object.keys(model).includes(key))
 
 const flatten = (obj: ObjectType, parentName: string = ""): ObjectType =>
   Object.keys(obj).length > 0 ?
@@ -22,8 +22,8 @@ const flatten = (obj: ObjectType, parentName: string = ""): ObjectType =>
     {}
 
 const deflatten = (obj: ObjectType): ObjectType => {
-  const firstLevelProps = _.pickBy(obj, (value, key) => !key.includes("."))
-  const secondLevelProps = _.pickBy(obj, (value, key) => key.includes("."))
+  const firstLevelProps = _.pickBy(obj, (_value, key) => !key.includes("."))
+  const secondLevelProps = _.pickBy(obj, (_value, key) => key.includes("."))
   let newObj = firstLevelProps
 
   Object.keys(secondLevelProps).forEach(key => {

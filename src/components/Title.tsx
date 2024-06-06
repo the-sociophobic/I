@@ -2,7 +2,6 @@ import React from 'react'
 
 import ResizeObserver from 'resize-observer-polyfill'
 
-import { Context } from './Store'
 import TitleAvatar from './TitleAvatar'
 
 export type TitleProps = {
@@ -13,11 +12,10 @@ export type TitleProps = {
 const Title: React.FC<TitleProps> = ({
 
 }) => {
-  const state = React.useContext(Context)
-
   const containerRef = React.useRef<any>(null)
   const [dimensions, setDimensions] = React.useState({ width: 0, height: 0 })
-  let resizeObs
+  let resizeObs;
+  resizeObs;
   const resize = () => {
     if (containerRef.current)
       setDimensions({
