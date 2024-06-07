@@ -75,5 +75,27 @@ body
     &__img
       @extend .abs-cover
 
-// .Projects
-//   .Project
+.Projects
+  .ProjectsOne
+    border-top: 1px solid $main-text
+    padding: 15px 0
+    &__icon
+      width: 50px
+      height: 50px
+    &__date
+
+.TagsOne
+  @extend .p
+  @extend .no-select
+  line-height: 2
+  padding: 0 5px
+  margin-right: 10px
+  display: inline-flex
+  &--enabled,
+  &--disabled
+    cursor: pointer
+  &--enabled
+    // color: $main-background
+    background-color: $lef-color
+  &--disabled
+    box-shadow: 0 0 0 1px $main-text
