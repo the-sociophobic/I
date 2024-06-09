@@ -11,7 +11,7 @@
     "preview": "vite preview",
     "predeploy": "yarn build",
     "deploy0": "gh-pages -d dist",
-    "deploy": "yarn run build && echo Леф.рф > ./dist/CNAME && gh-pages -d dist"
+    "deploy": "yarn build && echo Леф.рф > ./dist/CNAME && gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.3",

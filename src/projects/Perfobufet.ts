@@ -1,5 +1,7 @@
 import { ProjectType } from './types'
 
+import ПерфотачкаIcon from '../assets/img/Perfobufet/Перфотачка.png'
+
 
 const Perfobufet: ProjectType[] = [
   {
@@ -10,7 +12,7 @@ const Perfobufet: ProjectType[] = [
       {
         tags: ['сайт', '3д'],
         links: [
-          { label: 'сайт', URL: 'https://the-sociophobic.github.io/perfobufet/' },
+          { label: 'сайт', URL: 'https://the-sociophobic.github.io/perfobufet' },
           { label: 'код', URL: 'https://github.com/the-sociophobic/perfobufet' },
         ],
         blocks: [
@@ -32,8 +34,8 @@ const Perfobufet: ProjectType[] = [
     ],
   },
   {
-    title: 'Перфотачка',
-    icon: '',
+    title: 'Фестиваль Перфотачки',
+    icon: ПерфотачкаIcon,
     date: '01.10.2021',
     tagSections: [
       {
@@ -59,7 +61,7 @@ const Perfobufet: ProjectType[] = [
         ]
       },
       {
-        tags: ['видео'],
+        tags: ['видео', '3д'],
         links: [],
         blocks: [
           {

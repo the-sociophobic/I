@@ -25,7 +25,7 @@ const TagsSelector: FC<TagsSelectorProps> = ({
   } = useTags()
 
   return (
-    <div className={`${className} d-flex`}>
+    <div className={`${className} d-flex flex-wrap`}>
       {showAllButton &&
         <TagsOne
           tag={'Все'}

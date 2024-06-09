@@ -17,6 +17,7 @@ export type ProjectTagType =
   | 'бот'
   | 'видео'
   | 'инсталляция'
+  | 'иллюстрации'
 
 export const projectTagValues: ProjectTagType[] = [
   'сайт',
@@ -28,7 +29,8 @@ export const projectTagValues: ProjectTagType[] = [
   'организатор',
   'бот',
   'видео',
-  'инсталляция'
+  'инсталляция',
+  'иллюстрации',
 ]
 
 export type TagsSelectorTagType = ProjectTagType | 'Все'
@@ -59,4 +61,5 @@ export type ProjectSectionImageType = {
 
 export type ProjectMappedType = ProjectType & {
   tags: ProjectTagType[]
+  datetime: string
 }

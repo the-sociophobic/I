@@ -10,7 +10,7 @@ const TochkaDostupa: ProjectType[] = [
       {
         tags: ['сайт'],
         links: [
-          { label: 'сайт', URL: 'https://2018.tochkadostupa.spb.ru/' },
+          { label: 'сайт', URL: 'https://2018.tochkadostupa.spb.ru' },
           { label: 'код', URL: 'https://github.com/the-sociophobic/tochka-dostupa-4' },
         ],
         blocks: [
@@ -28,7 +28,22 @@ const TochkaDostupa: ProjectType[] = [
             text: 'Сайт театрального фестиваля'
           },
         ]
-      }
+      },
+      {
+        tags: ['актёр'],
+        links: [],
+        blocks: [
+          {
+            type: 'images',
+            images: [
+              {
+                src: '',
+                description: 'Постеры и афиши'
+              },
+            ]
+          },
+        ]
+      },
     ],
   },
   {
@@ -39,7 +54,7 @@ const TochkaDostupa: ProjectType[] = [
       {
         tags: ['сайт'],
         links: [
-          { label: 'сайт', URL: 'https://schedule.tochkadostupa.spb.ru/' },
+          { label: 'сайт', URL: 'https://schedule.tochkadostupa.spb.ru' },
           { label: 'код', URL: 'https://github.com/the-sociophobic/tochka-dostupa-5' },
         ],
         blocks: [
@@ -68,10 +83,14 @@ const TochkaDostupa: ProjectType[] = [
       {
         tags: ['сайт'],
         links: [
-          { label: 'сайт', URL: 'https://2020.tochkadostupa.spb.ru/' },
-          // { label: 'код', URL: 'https://github.com/the-sociophobic/tochka-dostupa-4' },
+          { label: 'сайт', URL: 'https://the-sociophobic.github.io/not-to-scale' },
+          { label: 'код', URL: 'https://github.com/the-sociophobic/not-to-scale' },
         ],
         blocks: [
+          {
+            type: 'h1',
+            h1: 'Спектакль Not to scale'
+          },
           {
             type: 'images',
             images: [
@@ -83,7 +102,7 @@ const TochkaDostupa: ProjectType[] = [
           },
           {
             type: 'text',
-            text: 'Сайт театрального фестиваля'
+            text: 'Сайт спектакль для двоих'
           },
         ]
       }
@@ -97,7 +116,7 @@ const TochkaDostupa: ProjectType[] = [
       {
         tags: ['сайт'],
         links: [
-          { label: 'сайт', URL: 'https://2021.tochkadostupa.spb.ru/' },
+          { label: 'сайт', URL: 'https://2021.tochkadostupa.spb.ru' },
           { label: 'код', URL: 'https://github.com/the-sociophobic/tochka-dostupa-7' },
         ],
         blocks: [

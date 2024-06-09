@@ -12,14 +12,12 @@ const Projects: React.FC<ProjectsProps> = ({}) => {
 
   return (
     <div className='Projects'>
-      <div className='container'>
-        {projects.map(project =>
-          <ProjectsOne
-            key={project.title}
-            {...project}
-          />
-        )}
-      </div>
+      {projects.map(project =>
+        <ProjectsOne
+          key={project.title}
+          {...project}
+        />
+      )}
     </div>
   )
 }

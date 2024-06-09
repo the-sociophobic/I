@@ -12,6 +12,13 @@ const useParams = () => {
     }
 
     setParams(omitBy(stateWithUndefined, isUndefined) as { [k: string]: string })
+    setTimeout(() =>
+      window.history.replaceState(
+        null,
+        '',
+        window.location.pathname + window.location.search.replace(/=/g, '')
+      )
+    , 10)
   }
 
   return ({ paramsState, setParamsStateLike, setParams })
