@@ -39,7 +39,7 @@ const Title: React.FC<TitleProps> = ({
     return Math.round(isHorizontalTitle ?
       dimensions.width / longestHorizontal / letterRatio / 1.0
       :
-      dimensions.height / longestVertical / 1.2
+      dimensions.height / longestVertical / 1.3
     )
 
   }
@@ -50,12 +50,12 @@ const Title: React.FC<TitleProps> = ({
       className='Title__h1 Title__h1--horizontal'
       style={{ fontSize }}
     >
-      <p className='p inherit-all' >МОЁ ИМЯ</p>
-      <p className='p inherit-all text-lef' >ЛЕФ ВАСИЛЕФ</p>
+      <p className='p inherit-all text-title' >МОЁ ИМЯ</p>
+      <p className='p inherit-all text-name' >ЛЕФ ВАСИЛЕФ</p>
       <div className='d-flex flex-row align-items-center inherit-all'>
-        <p className='p inherit-all d-inline' >Я ЕБ</p>
+        <p className='p inherit-all d-inline text-title' >Я ЕБ</p>
         <TitleAvatar fontSize={fontSize * .8} />
-        <p className='p inherit-all d-inline' >ШУ СИЛЬНО</p>
+        <p className='p inherit-all d-inline text-title' >ШУ СИЛЬНО</p>
       </div>
     </h1>
 
@@ -64,15 +64,15 @@ const Title: React.FC<TitleProps> = ({
       className='Title__h1'
       style={{ fontSize }}
     >
-      <p className='p inherit-all' >МОЁ ИМЯ</p>
-      <p className='p inherit-all text-lef' >ЛЕФ ВА-</p>
-      <p className='p inherit-all' ><span className='inherit-all text-lef'>СИЛЕФ</span> Я</p>
+      <p className='p inherit-all text-title' >МОЁ ИМЯ</p>
+      <p className='p inherit-all text-name' >ЛЕФ ВА-</p>
+      <p className='p inherit-all' ><span className='inherit-all text-name'>СИЛЕФ</span> Я</p>
       <div className='d-flex flex-row align-items-center inherit-all'>
-        <p className='p inherit-all d-inline' >ЕБ</p>
+        <p className='p inherit-all d-inline text-title' >ЕБ</p>
         <TitleAvatar fontSize={fontSize * .8} />
-        <p className='p inherit-all d-inline' >ШУ</p>
+        <p className='p inherit-all d-inline text-title' >ШУ</p>
       </div>
-      <p className='p inherit-all d-inline' >СИЛЬНО</p>
+      <p className='p inherit-all d-inline text-title' >СИЛЬНО</p>
     </h1>
 
   return (

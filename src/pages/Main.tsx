@@ -1,15 +1,15 @@
 import React from 'react'
 
 import Title from '../components/Title'
-import Projects from '../components/Projects'
-import TagsSelector from '../components/Tags/TagsSelector'
+// import Projects from '../components/Projects'
+// import TagsSelector from '../components/Tags/TagsSelector'
 
 
 const Main: React.FC = () => {
   return (
     <>
       <Title />
-      <div className='container'>
+      {/* <div className='container'>
         <div className='row justify-content-center'>
           <div className='col-md-10 d-flex flex-column align-items-end'>
             <h1 className='h1 h1--xl'>
@@ -22,7 +22,7 @@ const Main: React.FC = () => {
             <Projects />
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   )
 }
