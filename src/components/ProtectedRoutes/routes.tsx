@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 import Main from '../../pages/Main'
 import Trousers from '../../pages/Trousers'
 import RedirectToMain from '../../pages/RedirectToMain'
+import Korneplod from '../../pages/Korneplod'
 
 
 export type RouteType = {
@@ -23,6 +24,11 @@ const routes: RouteType[] = [
     path: '/штаны',
     title: 'Штаны',
     element: <Trousers />,
+  },
+  {
+    path: '/корнеплод',
+    title: 'Корнеплод',
+    element: <Korneplod />,
   },
   {
     path: '/*',

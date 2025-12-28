@@ -22,7 +22,6 @@ const Button: React.FC<ButtonProps> = ({
       disabled={disabled}
       className={`
       Button
-      Button--green
       ${disabled && 'Button--disabled'}
       ${children ? 'justify-content-center' : 'justify-content-between'}
       ${className}
