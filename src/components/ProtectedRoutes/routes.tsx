@@ -2,8 +2,9 @@ import { ReactNode } from 'react'
 
 import Main from '../../pages/Main'
 import Trousers from '../../pages/Trousers'
-import RedirectToMain from '../../pages/RedirectToMain'
 import Korneplod from '../../pages/Korneplod'
+import Call from '../../pages/Call'
+import RedirectToMain from '../../pages/RedirectToMain'
 
 
 export type RouteType = {
@@ -29,6 +30,11 @@ const routes: RouteType[] = [
     path: '/корнеплод',
     title: 'Корнеплод',
     element: <Korneplod />,
+  },
+  {
+    path: '/созвон',
+    title: 'Созвон',
+    element: <Call />,
   },
   {
     path: '/*',
